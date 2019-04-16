@@ -6,20 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>欢迎来到我的网站</title>
+	<link rel="shortcut icon" href="bitbug_favicon.ico" />
     <style>
         .app {
-            height: 500px;
-            width: 500px;
-            background: #eee;
-            margin: 0 auto;
+            border: 2px solid khaki;
+        }
+        .app::after{
+            display: table;
+            content: "";
+            clear: both;
+        }
+        .item-a {
+            border: 1px solid gray;
+            float: left;
         }
     </style>
 </head>
 
 <body>
     <div class="app">
-        <h2><a href="./page/top.html">大家下午好！</a> </h2>
+        <div class="item-a">
+            <h2><a href="./page/top.html">去TOP页面</a> </h2>
+            <h2><a href="./resume/index.html">去看我的简历</a> </h2>
+            <h2>网站未完善</h2>
+        </div>
     </div>
-</body>
+</body> 
 
 </html>
