@@ -4,8 +4,8 @@
 
 ##### 这个项目有必要备注一下：
 
-  在学校的时候写了两年多的纯HTML+CSS+JavaScript的页面，如今工作快一年了，使用的大多是vue，现在回来练习一下基本的技能，才发现惨不忍睹，难受，不过照样公开了-->
+  在学校的时候写了两年多的纯HTML+CSS+JavaScript的页面，如今工作快一年了，使用的大多是vue，现在回来练习一下基本的技能，才发现惨不忍睹，难受，不过照样公开了-->  
 
-[在线观看]: https://yjqvip8.github.io/dsp.github.io/
+[点击我]: https://yjqvip8.github.io/dsp.github.io/	"点击我"
 
   大家看完之后，默默离开吧！
