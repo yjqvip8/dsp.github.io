@@ -7,7 +7,7 @@
     <title>相册</title>
     <link rel="stylesheet" href="./index.css">
 </head>
-<body>
+<body onclick="musick()">
 <div class="box">
     <div class="out-front"></div>
     <div class="out-front1"></div>
@@ -27,4 +27,12 @@
     <div class="out-bottom"></div>
     <div class="out-bottom1"></div>
 </div>
+<audio src="./music.mp3" autoplay></audio>
+<script>
+    function musick(){
+        var music = document.querySelector("audio");
+        music.play();
+    }
+</script>
+</body>
 </html>
