@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>滚动实验</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .content{
+            overflow: hidden;
+        }
+        .content .item-body{
+            color: red;
+            font-size: 50px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        .content .item-body a{
+            position:absolute;
+        }
+        .content .nav_button{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            border: 1px solid blue;
+        }
+        .content .nav_button button{
+            margin:15px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="nav_button">
+            <button onclick="jumpTo(0)">第一</button>
+            <button onclick="jumpTo(1)">第二</button>
+            <button onclick="jumpTo(2)">第三</button>
+            <button onclick="jumpTo(3)">第四</button>
+        </div>
+        <div class="item-body">
+            <a name="item0"></a>
+            1
+            <img src="" alt="">
+        </div>
+        <div class="item-body">
+            <a name="item1"></a>
+            2
+            <img src="" alt="">
+        </div>
+        <div class="item-body">
+            <a name="item2"></a>
+            3
+            <img src="" alt="">
+        </div>
+        <div class="item-body">
+            <a name="item3"></a>
+            4
+            <img src="" alt="">
+        </div>
+    </div>
+    <a href="#miao" class="jump_item"></a>
+    <script>
+        var $content_items = document.querySelectorAll(".content .item-body");
+        var $content_imgs = document.querySelectorAll(".content .item-body img");
+        var $content = document.querySelectorAll(".content");
+        var $body_height = window.innerHeight;
+        var $jump_item = document.querySelector("a.jump_item");
+        $content[0].style.height = $body_height+"px";
+        var imgArr = [
+            {bg_img_src:"./img/bg.jpg",img_src:"./img/top.png"},
+            {bg_img_src:"./img/bg.jpg",img_src:"./img/top.png"},
+            {bg_img_src:"./img/bg.jpg",img_src:"./img/top.png"},
+            {bg_img_src:"./img/bg.jpg",img_src:"./img/top.png"}
+        ]
+        for(var item of $content_items){
+            item.style.height = $body_height + "px";
+            item.style.backgroundImage="url("+imgArr[0].bg_img_src+")";
+        }
+        for(var item of $content_imgs){
+            item.setAttribute("src",imgArr[0].img_src);
+        }
+        
+        function jumpTo(index){
+            $jump_item.setAttribute('href',"#item"+index);
+            $jump_item.click();
+            console.log("跳转成功");
+            //addEvent("add");
+        }
+        
+        /*
+            var topFns = 0;
+            function scrollFunc(e) {
+                e = e || window.event;
+                var key = "wheelDelta" , state = "top";
+                if(e.detail) key='detail';
+                if(e[key]<0) state = "down";
+                topFn(state,document.documentElement.scrollTop);
+            }
+            function topFn(state,scroll){
+                if (topFns == scroll || scroll==0) return;
+                topFns = scroll;
+                if(scroll < $body_height){
+                    addEvent("remove");
+                    jumpTo(2)
+                }else{
+                    console.log($body_height/scroll);
+                }
+                //window.scrollBy(0,$body_height*2)
+            }
+            function addEvent(state){
+                if(state == "add"){
+                    console.log("add 事件");
+                    if (document.addEventListener) {
+                        document.addEventListener('DOMMouseScroll', scrollFunc); 
+                    } 
+                    window.onmousewheel = document.onmousewheel = scrollFunc;
+                }else if(state == "remove"){
+                    console.log("remove 事件");
+                    if (document.addEventListener) {
+                       document.removeEventListener('DOMMouseScroll', scrollFunc);
+                    } 
+                    window.onmousewheel = document.onmousewheel = null;
+                }
+            }
+            addEvent("add");
+        */
+    </script>
+</body>
+</html>
