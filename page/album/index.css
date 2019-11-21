@@ -44,7 +44,7 @@ html {
 .out-front1 {
   background-image: url("./image/1.jpg");
   transform: translateZ(300px);
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/pcWork\/dsp\.github\.io\/page\/album\/index\.scss}line{font-family:\0000340}}
@@ -57,7 +57,7 @@ html {
 .out-back1 {
   background-image: url("./image/2.jpg");
   transform: translateZ(-300px);
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/pcWork\/dsp\.github\.io\/page\/album\/index\.scss}line{font-family:\0000349}}
@@ -70,7 +70,7 @@ html {
 .out-left1 {
   background-image: url("./image/3.jpg");
   transform: rotateY(90deg) translateZ(300px);
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/pcWork\/dsp\.github\.io\/page\/album\/index\.scss}line{font-family:\0000358}}
@@ -83,7 +83,7 @@ html {
 .out-right1 {
   background-image: url("./image/4.jpg");
   transform: rotateY(-90deg) translateZ(300px);
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/pcWork\/dsp\.github\.io\/page\/album\/index\.scss}line{font-family:\0000367}}
@@ -96,7 +96,7 @@ html {
 .out-top1 {
   background-image: url("./image/5.jpg");
   transform: rotateX(90deg) translateZ(300px);
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/pcWork\/dsp\.github\.io\/page\/album\/index\.scss}line{font-family:\0000376}}
@@ -109,5 +109,5 @@ html {
 .out-bottom1 {
   background-image: url("./image/6.jpg");
   transform: rotateX(-90deg) translateZ(300px);
-  opacity: 0.1;
+  opacity: 0.2;
 }

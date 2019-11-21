@@ -35,7 +35,7 @@ html{
 .out-front1{
     background-image: url("./image/1.jpg");
     transform: translateZ(300px);
-    opacity: 0.1;
+    opacity: 0.2;
 }
 .out-back{
     background-image: url("./image/2.jpg");
@@ -44,7 +44,7 @@ html{
 .out-back1{
     background-image: url("./image/2.jpg");
     transform: translateZ(-300px);
-    opacity: 0.1;
+    opacity: 0.2;
 }
 .out-left{
     background-image: url("./image/3.jpg");
@@ -53,7 +53,7 @@ html{
 .out-left1{
     background-image: url("./image/3.jpg");
     transform: rotateY(90deg) translateZ(300px) ;
-    opacity: 0.1;
+    opacity: 0.2;
 }
 .out-right{
     background-image: url("./image/4.jpg");
@@ -62,7 +62,7 @@ html{
 .out-right1{
     background-image: url("./image/4.jpg");
     transform: rotateY(-90deg) translateZ(300px);
-    opacity: 0.1;
+    opacity: 0.2;
 }
 .out-top{
     background-image: url("./image/5.jpg");
@@ -71,7 +71,7 @@ html{
 .out-top1{
     background-image: url("./image/5.jpg");
     transform: rotateX(90deg) translateZ(300px);
-    opacity: 0.1;
+    opacity: 0.2;
 }
 .out-bottom{
     background-image: url("./image/6.jpg");
@@ -80,5 +80,5 @@ html{
 .out-bottom1{
     background-image: url("./image/6.jpg");
     transform: rotateX(-90deg) translateZ(300px);
-    opacity: 0.1;
+    opacity: 0.2;
 }
